@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Sign Up</h2>
+
+    <form (submit)="onSignup(signupForm)" #signupForm="ngForm">
+      <div class="form-group">
+        <input type="text" ngModel name="enteredfirstname" placeholder="First Name" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <div class="form-group">
+        <input type="text" ngModel name="enteredsurname" placeholder="Surname" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <div class="form-group">
+        <input type="text" ngModel name="enteredusername" placeholder="Username" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <div class="form-group">
+        <input type="text" ngModel name="entereduseremail" placeholder="Email" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <div class="form-group">
+        <input type="password" ngModel name="enteredpassword" placeholder="Password" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <div class="form-group">
+        <input type="text" ngModel name="enteredcityofresidence" placeholder="City of Residence" required minlength="1" class="form-control mt-2">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Sign Up</button>
+    </form>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
